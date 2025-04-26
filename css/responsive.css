@@ -1,0 +1,33 @@
+@media(max-width: 767px){
+    .bannerslide h2 {
+        font-size: 37px;
+        margin: 8px 0 12px;
+    }
+    .bannerCnt{
+        margin-top: -70px;
+    }
+    .bannerslide h3 {
+        font-size: 20px;
+    }
+    .btn {
+        border-radius: 30px;
+        padding: 16px 10px;
+        font-size: 14px;
+    }
+    #banner .leftArrow, 
+    #banner .rightArrow{
+       display: none;
+
+    }
+    #categorie h2 {
+        font-size: 14px;
+    } 
+
+.bannerimg{
+    margin-top: 10px;
+}
+.leftArrow1, .rightArrow2{
+    display: none;
+}
+
+}
