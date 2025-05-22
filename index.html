@@ -39,25 +39,17 @@
                 <div class="row align-items-center ">
                     <div class="col-lg-5">
                         <ul class="mainmenu">
-                            <li><a href="#">Home</a>
-                                <i class="fa-solid fa-angle-down"></i>
+                            <li><a href="./index.html">Home</a>
                             </li>
-                            <li><a href="#">Shop</a>
+                            <li><a href="./shop.html">Shop</a>
                             <i class="fa-solid fa-angle-down"></i>
-                                <ul class="submenu">
-                                    <li><a href="#">Electronice</a></li>
-                                    <li><a href="#">kide</a></li>
-
-                                </ul>
+                               
                             </li>
                             <li><a href="#">Blog</a>
-                                <i class="fa-solid fa-angle-down"></i>
                             </li>
-                            <li><a href="#">About</a>
-                                <i class="fa-solid fa-angle-down"></i>
+                            <li><a href="./about.html">About</a>
                             </li>
                             <li><a href="#">Contact</a>
-                                <i class="fa-solid fa-angle-down"></i>
                             </li>
                         </ul>
                     </div>
@@ -65,8 +57,8 @@
                     <div class="col-lg-5 quicklinks ">
                         <a href="tel:2195550114"><span><i class="fa-solid fa-phone-volume"></i> </span>(219) 555-0114 </a>
                         <ul>
-                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>         
+                            <li><a href="#" class="searchicon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a href="./heart.html"><i class="fa-solid fa-heart"></i></a></li>         
                             <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
                             <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
                         </ul>
@@ -82,7 +74,9 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col">
-                        <i class="fa-solid fa-align-right"></i>
+                      <button class="bt" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobSidebar">
+                          <i class="fa-solid fa-align-right"></i>
+                      </button>
                     </div>
                     <div class="col">
                         <a href="#"><img src="./img/Logo (1).png" alt=""></a>
@@ -97,10 +91,63 @@
                 </div>
             </div>
          </section>
+                     <!-- bar -->
+         <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="mobSidebar">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">MENU</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <a href="./index.html" class="d-block text-white mb-2">Home</a>
+        <a href="./shop.html" class="d-block text-white mb-2">Shop</a>
+        <a href="#" class="d-block text-white mb-2">Settings</a>
+        <a href="#" class="d-block text-white mb-2">Log Out</a>
+    </div>
         <!-- mobile nav end -->
 
      </header>
     <!-- Header End -->
+
+
+    <!-- SEARCH STARTS -->
+
+    <Section  class="searchbox ">
+        <button class="cancel"><i class="fa-solid fa-xmark"></i></button>
+        <div class="searchares">
+            <input type="text" placeholder="search here">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="results">
+            <div class="row">
+                   <div class="col-lg-2 productCard my-3 me-3">
+                <div class="catecnt">
+                <a href="#"><img class="img-fluid" src="./img/Group.png" alt="Vegetables"></a>
+                <h4>Vegetables</h4>
+                <p>165 Products</p>
+            </div>
+            </div>
+            
+            <div class="col-lg-2 productCard my-3 me-3">
+                <div class="catecnt">
+                <a href="#"><img class="img-fluid" src="./img/fruits 1.png" alt=""></a>
+                <h4>Fresh Fruit</h4>
+                <p>137 Products</p>
+            </div>
+            </div>
+
+            <div class="col-lg-2 productCard my-3 me-3">
+                <div class="catecnt">
+                <a href="#"><img class="img-fluid" src="./img/fish 1.png" alt=""></a>
+                <h4>Fish</h4>
+                <p>34 Products</p>
+            </div>
+            </div>
+        </div>
+    </Section>
+
+    <!-- SEARCH END -->
 
 
     <!-- main starts -->
@@ -120,7 +167,7 @@
                                 Organic Food</h2>
                                 <h3>Sale up to <span> 30% OFF </span> </h3>
                                 <p>Free shipping on all your order. we deliver, you enjoy</p>
-                                <a href="#" class="btn btn-primary">Shop Now</a>
+                                <a href="#" class="btn btn-primary btnpr">Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
 
                         </div>
                     </div>
@@ -139,7 +186,7 @@
                                 Organic Food</h2>
                                 <h3>Sale up to <span> 30% OFF </span> </h3>
                                 <p>Free shipping on all your order. we deliver, you enjoy</p>
-                                <a href="#" class="btn btn-primary">Shop Now</a>
+                                <a href="#" class="btn btn-primary btnpr">Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
 
                         </div>
                     </div>
@@ -158,7 +205,7 @@
     <!-- tsscard starts -->
      <section id="tsscard">
         <div class="container">
-            <div class="row">
+            <div class="row tss">
                 
                 
                 <div class="col-lg-3 col-md-6">
@@ -172,7 +219,7 @@
                     <p>Instant access to Contact</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <a href="#"><img src="./img/Icon.png" alt=""></a>
+                    <a href="#"><img src="./img/shopping-bag.png" alt=""></a>
                     <h3>100% Sucure Payment</h3>
                     <p>We ensure your money is save</p>
                 </div>
@@ -192,7 +239,7 @@
         <div class="container">
             <div class="heading d-flex justify-content-between align-items-center">
                 <h2>Featured products</h2>
-                <a href="#">View All</a>
+                <a href="#" class="view">View All<span><i class="fa-solid fa-arrow-right"></i></span></a>
 
             </div>
             <div class="featuredProducts">
@@ -338,17 +385,17 @@
                 <a href="#">View All</a>
 
             </div>
-            <div class="row">
+            <div class="row categorySlider">
                 
-            <div class="col-lg-2">
+            <div class="col-lg-2 productCard">
                 <div class="catecnt">
-                <a href="#"><img class="img-fluid" src="./img/Vegetable.png" alt=""></a>
+                <a href="#"><img class="img-fluid" src="./img/Group.png" alt="Vegetables"></a>
                 <h4>Vegetables</h4>
                 <p>165 Products</p>
             </div>
             </div>
             
-            <div class="col-lg-2">
+            <div class="col-lg-2 productCard">
                 <div class="catecnt">
                 <a href="#"><img class="img-fluid" src="./img/fruits 1.png" alt=""></a>
                 <h4>Fresh Fruit</h4>
@@ -356,7 +403,7 @@
             </div>
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-2 productCard">
                 <div class="catecnt">
                 <a href="#"><img class="img-fluid" src="./img/fish 1.png" alt=""></a>
                 <h4>Fish</h4>
@@ -365,7 +412,7 @@
 
             </div>
 
-          <div class="col-lg-2">
+          <div class="col-lg-2 productCard">
                 <div class="catecnt">
                 <a href="#"><img class="img-fluid" src="./img/meat 1.png" alt=""></a>
                 <h4>Meat</h4>
@@ -373,7 +420,7 @@
             </div>
 
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 productCard">
                 <div class="catecnt">
                     <a href="#"><img src="./img/Filled outline.png" alt=""></a>
                
@@ -382,7 +429,7 @@
             </div>
 
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 productCard">
                 <div class="catecnt">
                 <a href="#"><img class="img-fluid" src="./img/snacks 1.png" alt=""></a>
                 <h4>Snacks</h4>
@@ -394,16 +441,687 @@
         </div>
         </div>
 
-        <div id="bannerleftArrow" class="leftArrow1"><i class="fa-solid fa-arrow-left"></i></div>
-        <div id="bannerrightArrow" class="rightArrow2"><i class="fa-solid fa-arrow-right"></i></i></div>
+        <div id="catleftArrow" class="leftArrow1 d-block d-lg-none"><i class="fa-solid fa-arrow-left"></i></div>
+        <div id="catrightArrow" class="rightArrow2 d-block d-lg-none"><i class="fa-solid fa-arrow-right"></i></i></div>
         
 
        </section>
-
-
       <!-- Categories products end -->
 
 
+
+      <!-- Organic food starts -->
+      <section id="Organic">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <a href="#"><img class="img-fluid" src="./img/foodnam.png" alt=""></a>
+                </div>
+                <div class="col-lg-6">
+                    <h2>100% Trusted <br>
+                        Organic Food Store</h2>
+                    <h4>Healthy & natural food for lovers of healthy food.</h4>
+                    <p>Ut quis tempus erat. Phasellus euismod bibendum magna non tristique. Pellentesque semper vestibulum elit sed condimentum. Nunc pretium fermentum interdum. </p>
+                    <h4>Every day fresh and quality products for you.</h4>
+                    <p>Maecenas vehicula a justo quis laoreet. Sed in placerat nibh, a posuere ex. Morbi sem neque, aliquam sed orci et, rhoncus lobortis felis. Sed vestibulum nisl sit amet sapien.</p>
+                    <a href="#" class="btn btn-primary">Shop Now</a>
+
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Organic food end -->
+
+
+      <!-- NUMBER STARTS  -->
+      <section id="number">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="number1">
+                        <h4>37+</h4>
+                        <p>Years of Hard Work</p>
+                
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3">
+                    <div class="number1">
+                        <h4>500k+</h4>
+                        <p>Happy Customer</p>
+                
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="number1">
+                        <h4>28+</h4>
+                        <p>Qualified Team Member</p>
+                
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3">
+                    <div class="number1">
+                        <h4>750k+</h4>
+                        <p>Monthly Orders</p>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- NUMBER END -->
+
+
+      <!-- fruit starts -->
+       <section id="fruit">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="./img/fruit2 (1).png" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="./img/fruit2 (2).png" alt="">
+                </div>
+            </div>
+        </div>
+       </section>
+      <!-- fruit end -->
+
+
+
+      <!-- sell products starts -->
+      <section id="Featured">
+        <div class="container">
+            <div class="heading d-flex justify-content-between align-items-center">
+                <h2>Best Seller Products</h2>
+                <a href="#" class="view">View All <span><i class="fa-solid fa-arrow-right"></i></i></span> </a>
+
+            </div>
+            <div class="featuredProducts">
+                <div class="row justify-content-between">
+                    <div class="col-lg-2 col-md-6">
+                        <div class="productCard">
+                            <div class="productThumb">
+                                <div class="quickLinks">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                    </ul>
+    
+                                </div>
+                               
+                                <a href="#"><img class="img-fluid" src="./img/Product Image1.png" alt=""></a>
+                                
+                            </div>
+                            
+                            <div class="productCnt">
+                                <a href="#" class="productTitle">Green Apple</a>
+                                <p>$14.99 <del>$20.99</del></p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star empty"></i>
+
+                                </div>
+                                <a href="#" class="cartBtn"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-2 col-md-6">
+                        <div class="productCard">
+                            <div class="productThumb">
+                                <div class="quickLinks">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                    </ul>
+    
+                                </div>
+                                
+                                <a href="#"><img class="img-fluid" src="./img/Product Image2.png" alt=""></a>
+                                
+                            </div>
+                            
+                            <div class="productCnt">
+                                <a href="#" class="productTitle">Chanise Cabbage</a>
+                                <p>$14.99 </p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star empty"></i>
+
+                                </div>
+                                <a href="#" class="cartBtn"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-2 col-md-6">
+                        <div class="productCard">
+                            <div class="productThumb">
+                                <div class="quickLinks">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                    </ul>
+    
+                                </div>
+                                
+                                <a href="#"><img class="img-fluid" src="./img/Product Image3.png" alt=""></a>
+                                
+                            </div>
+                            
+                            <div class="productCnt">
+                                <a href="#" class="productTitle">Green Capsicum</a>
+                                <p>$14.99 </p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star empty"></i>
+
+                                </div>
+                                <a href="#" class="cartBtn"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="productCard">
+                            <div class="productThumb">
+                                <div class="quickLinks">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                    </ul>
+    
+                                </div>
+                                
+                                <a href="#"><img class="img-fluid" src="./img/lettucs.png" alt=""></a>
+                                
+                            </div>
+                            
+                            <div class="productCnt">
+                                <a href="#" class="productTitle">Green Lettuce</a>
+                                <p>$14.99</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star empty"></i>
+
+                                </div>
+                                <a href="#" class="cartBtn"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-lg-2 col-md-6">
+                        <div class="productCard">
+                            <div class="productThumb">
+                                <div class="quickLinks">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                    </ul>
+    
+                                </div>
+                                
+                                <a href="#"><img class="img-fluid" src="./img/corn.png" alt=""></a>
+                                
+                            </div>
+                            
+                            <div class="productCnt">
+                                <a href="#" class="productTitle">Corn</a>
+                                <p>$14.99</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star empty"></i>
+
+                                </div>
+                                <a href="#" class="cartBtn"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- sell products end -->
+
+
+
+
+      <!-- hot deals starts -->
+       
+<section id="sell">
+    <div class="container">
+        <div class=" row">
+            <div class="col-lg-3">
+                <h2>Hot Deals</h2>
+
+                <div class="groups">
+                    <div class="sells d-flex">
+                    
+                        <div class="col-lg-4">
+                            <a href="#"> <img class="img-fluid" src="./img/apple.png">  </a>
+                        </div>
+                        <div class="col-lg-8 ">
+                           
+                           
+                            <div class="sellCnt">
+                               <div class="content-part">
+                                <a href="#">Green Apple</a>
+                                   <P>$14.99 </P>
+                                  <div class="reating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div> 
+                                   </div>
+                                   <div class="quickLinks1 d-flex">
+                                    <ul class="qu">
+                                        <li>
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#" class="bag"><i class="fa-solid fa-bag-shopping"></i></a> 
+        
+                                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+            
+                                        </li>
+                                    </ul>
+                                </div>
+                                                          
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="sells d-flex ">
+                        
+                        <div class="col-lg-4">
+                            <a href="#"> <img class="img-fluid" src="./img/img1.png">  </a>
+                        </div>
+                        <div class="col-lg-8">
+                           
+                           
+                            <div class="sellCnt">
+                               <div class="content-part">
+                                <a href="#">Indian Malta</a>
+                                   <P>$14.99 </P>
+                                  <div class="reating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div> 
+                                   </div>
+                                   <div class="quickLinks1 d-flex">
+                                    <ul class="qu">
+                                        <li>
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#" class="bag"><i class="fa-solid fa-bag-shopping"></i></a> 
+        
+                                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+            
+                                        </li>
+                                    </ul>
+                                </div>
+                                                          
+                            </div>
+                        </div>
+    
+                    </div>      
+                    <div class="sells d-flex ">
+                        
+                        <div class="col-lg-4">
+                            <a href="#"> <img class="img-fluid" src="./img/iimg2.png">  </a>
+                        </div>
+                        <div class="col-lg-8">
+                           
+                           
+                            <div class="sellCnt">
+                                  <div class="content-part">
+                                <a href="#">Green Lettuce</a>
+                                   <P>$14.99 </P>
+                                  <div class="reating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div> 
+                                   </div>
+                                   <div class="quickLinks1 d-flex">
+                                    <ul class="qu">
+                                        <li>
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#" class="bag"><i class="fa-solid fa-bag-shopping"></i></a> 
+        
+                                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+            
+                                        </li>
+                                    </ul>
+                                </div>
+                                                          
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h2>Best Seller</h2>
+                <div class="groups">
+                    <div class="sells d-flex ">
+                    
+                        <div class="col-lg-4">
+                            <a href="#"> <img class="img-fluid" src="./img/img4.png">  </a>
+                        </div>
+                        <div class="col-lg-8">
+                           
+                           
+                            <div class="sellCnt">
+                              <div class="content-part">
+                                <a href="#">Eggplant</a>
+                                   <P>$14.99 </P>
+                                  <div class="reating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div> 
+                                   </div>
+                                   <div class="quickLinks1 d-flex">
+                                    <ul class="qu">
+                                        <li>
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#" class="bag"><i class="fa-solid fa-bag-shopping"></i></a> 
+        
+                                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+            
+                                        </li>
+                                    </ul>
+                                </div>
+                                                          
+                            </div>
+                        </div>
+    
+                    </div> 
+                    <div class="sells d-flex ">
+                        
+                        <div class="col-lg-4">
+                            <a href="#"> <img class="img-fluid" src="./img/img5.png">  </a>
+                        </div>
+                        <div class="col-lg-8">
+                           
+                           
+                            <div class="sellCnt">
+                               <div class="content-part">
+                                <a href="#">Red Capsicum</a>
+                                   <P>$14.99 </P>
+                                  <div class="reating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div> 
+                                   </div>
+                                   <div class="quickLinks1 d-flex">
+                                    <ul class="qu">
+                                        <li>
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#" class="bag"><i class="fa-solid fa-bag-shopping"></i></a> 
+        
+                                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+            
+                                        </li>
+                                    </ul>
+                                </div>
+                                                          
+                            </div>
+                        </div>
+    
+                    </div>      
+                    <div class="sells d-flex ">
+                        
+                        <div class="col-lg-4">
+                            <a href="#"> <img class="img-fluid" src="./img/img6.png">  </a>
+                        </div>
+                        <div class="col-lg-8">
+                           
+                           
+                            <div class="sellCnt">
+                               <div class="content-part">
+                                <a href="#">Red Tomatos</a>
+                                   <P>$14.99 </P>
+                                  <div class="reating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div> 
+                                   </div>
+                                   <div class="quickLinks1 d-flex">
+                                    <ul class="qu">
+                                        <li>
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#" class="bag"><i class="fa-solid fa-bag-shopping"></i></a> 
+        
+                                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+            
+                                        </li>
+                                    </ul>
+                                </div>
+                                                          
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <h2>Top Rated</h2>
+
+                <div class="groups">
+
+                    <div class="sells d-flex ">
+                    
+                        <div class="col-lg-4">
+                            <a href="#"> <img class="img-fluid" src="./img/img7.png">  </a>
+                        </div>
+                        <div class="col-lg-8">
+                           
+                           
+                            <div class="sellCnt">
+                               <div class="content-part">
+                                <a href="#">Big Potatos</a>
+                                   <P>$14.99 </P>
+                                  <div class="reating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div> 
+                                   </div>
+                                   <div class="quickLinks1 d-flex">
+                                    <ul class="qu">
+                                        <li>
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#" class="bag"><i class="fa-solid fa-bag-shopping"></i></a> 
+        
+                                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+            
+                                        </li>
+                                    </ul>
+                                </div>
+                                                          
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="sells d-flex">
+                        
+                        <div class="col-lg-4">
+                            <a href="#"> <img class="img-fluid" src="./img/img8.png">  </a>
+                        </div>
+                        <div class="col-lg-8">
+                           
+                           
+                            <div class="sellCnt">
+                                <div class="content-part">
+                               
+                                <a href="#">Corn</a>
+                                   <P>$14.99 </P>
+                                  <div class="reating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div> 
+                                   </div>
+                                   <div class="quickLinks1 d-flex">
+                                    <ul class="qu">
+                                        <li>
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#" class="bag"><i class="fa-solid fa-bag-shopping"></i></a> 
+        
+                                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+            
+                                        </li>
+                                    </ul>
+                                </div>
+                                                          
+                            </div>
+                        </div>
+    
+                    </div>      
+                    <div class="sells d-flex ">
+                        
+                        <div class="col-lg-4">
+                            <a href="#"> <img class="img-fluid" src="./img/img9.png">  </a>
+                        </div>
+                        <div class="col-lg-8">
+                           
+                           
+                            <div class="sellCnt">
+                                <div class="content-part">
+                               
+                                <a href="#">Fresh cauliflower</a>
+                                   <P>$14.99 </P>
+                                  <div class="reating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                   </div> 
+                                   </div>
+                                   <div class="quickLinks1 d-flex">
+                                    <ul class="qu">
+                                        <li>
+                                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                            <a href="#" class="bag"><i class="fa-solid fa-bag-shopping"></i></a> 
+        
+                                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+            
+                                        </li>
+                                    </ul>
+                                </div>
+                                                          
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>            
+            </div>
+            <div class="col-lg-3">
+                 
+                <a href="#"> <img class="img-fluid" src="./img/order.png">  </a>
+
+
+
+
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+      <!-- hot deals end -->
+
+<!-- Blog starts -->
+ <section id="blog">
+    <div class="container">
+        <p>BlOG</p>
+        <h2>Latest News</h2>
+        <div class="row">
+
+            <div class="col-lg-4">
+                <a href="#"><img class="img-fluid" src="./img/Blog Card.png" alt=""></a>
+            </div>
+            <div class="col-lg-4">
+                <a href="#"><img class="img-fluid" src="./img/Blog Card (1).png" alt=""></a>
+            </div>
+            <div class="col-lg-4">
+                <a href="#"><img class="img-fluid" src="./img/Blog Card (2).png" alt=""></a>
+            </div>
+            
+
+        </div>
+    </div>
+ </section>
+<!-- Blog end -->
+
+
+<!-- customer starts -->
+ <section id="customer">
+    <div class="container">
+        <p></p>
+        <h2>What Our Customer Says</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <a href="#"><img class="img-fluid" src="./img/Testimonial Card.png" alt=""></a>
+            </div>
+            <div class="col-lg-4">
+                <a href="#"><img class="img-fluid" src="./img/Testimonial Card (1).png" alt=""></a>
+            </div>
+            <div class="col-lg-4">
+                <a href="#"><img class="img-fluid" src="./img/Testimonial Card (2).png" alt=""></a>
+            </div>
+
+        </div>
+    </div>
+ </section>
+
+<!-- customer end -->
+
+      
     <!-- mobile footer starts -->
      <section id="mobilefooter" class="d-lg-none">
         <div class="container">
@@ -429,8 +1147,133 @@
      </section>
     <!-- footer end -->
 
+    <!-- starts -->
+     <section id="steps">
+        <div class="container">
+            <div class="row  justify-content-between">
+                <div class="img6 d-flex">
+                    <div class="col-lg-2">
+                        <a href="#"><img class="img-fluid" src="./img/steps.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#"><img class="img-fluid" src="./img/mango-1.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#"><img class="img-fluid" src="./img/food-1.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#"><img class="img-fluid" src="./img/food-2.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#"><img class="img-fluid" src="./img/bookoff-corporation-logo.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#"><img class="img-fluid" src="./img/gseies.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     
+<!-- end -->
 
 
+<!-- part starts -->
+ <section id="part">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="part1">
+                    <a href="#"><img class="img-fluid" src="./img/Map Pin.png" alt=""></a>
+                    <h4>Our Location</h4>
+                    <p>1901 Thornridge Cir. Shiloh, Washington DC 20020, United States</p>
+                </div>
+            </div>
+             <div class="col-lg-3">
+                <div class="part1">
+                    <a href="#"><img class="img-fluid" src="./img/PhoneCall.png" alt=""></a>
+                    <h4>Call Us 24/7</h4>
+                    <h3> (303) 555-0105</h3>
+                   
+                </div>
+            </div>
+             <div class="col-lg-6">
+                <div class="part1">
+                    <a href="#"><img class="img-fluid" src="./img/mail 1.png" alt=""></a>
+                    <h2>Subcribe our Newsletter</h2>
+                    <form action="">
+                        <input type="email" placeholder="your email">
+                        <button>Subscribe</button>
+                    </form>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+ </section>
+<!-- part end -->
+
+     <!-- footer starts-->
+      <section id="footerend">
+      <footer class="footer">
+  <div class="container">
+    <div class="footer-section logo-section">
+      <h2 class="logo"><img class="img-fluid" src="./img/Logo (1).png" alt=""></h2>
+      <p>Morbi cursus porttitor enim lobortis malesuada. Duis gravida turpis dui, eget bibendum magna.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h3>My Account</h3>
+      <ul>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Shopping Cart</a></li>
+        <li><a href="#">Wishlist</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Helps</h3>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Terms & Condition</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Proxy</h3>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Track Order</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Download Mobile App</h3>
+      <div class="d-flex gap">
+        <img class="img-fluid" src="./img/App Store.png" alt="App Store" width="120">
+        <img class="img-fluid" src="./img/Google Play.png" alt="Google Play" width="120">
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© Ecobazar eCommerce © 2021. All Rights Reserved</p>
+  </div>
+</footer>
+
+</section>
+<!-- footer end -->
 
 
 

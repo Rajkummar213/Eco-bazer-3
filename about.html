@@ -1,0 +1,543 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoBazar</title>
+    <link rel="shortcut icon" href="./images/faviIcon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+
+<body>
+   
+    <!-- Header section -->
+      <header>
+        <section id="topheader" class="d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 align-items-center ">
+                        <address> <samp><i class="fa-solid fa-location-dot"></i></samp> Store Location: Lincoln- 344, Illinois, Chicago, USA</address>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end    align-items-center 
+                    ">
+                        <select>
+                            <option>Eng</option>
+                            <option>Bn</option>
+                        </select>
+                        <select>
+                            <option>USD</option>
+                            <option>BDT</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mainavber" class="d-none d-lg-block">
+            <div class="container">
+                <div class="row align-items-center ">
+                    <div class="col-lg-5">
+                        <ul class="mainmenu">
+                            <li><a href="./index.html">Home</a>
+                            </li>
+                            <li><a href="./shop.html">Shop</a>
+                            <i class="fa-solid fa-angle-down"></i>
+                               
+                            </li>
+                            <li><a href="#">Blog</a>
+                            </li>
+                            <li><a href="./about.html">About</a>
+                            </li>
+                            <li><a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2"> <a href="#"><img src="./img/Logo (1).png" alt=""></a></div>
+                    <div class="col-lg-5 quicklinks ">
+                        <a href="tel:2195550114"><span><i class="fa-solid fa-phone-volume"></i> </span>(219) 555-0114 </a>
+                        <ul>
+                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a href="./heart.html"><i class="fa-solid fa-heart"></i></a></li>         
+                            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- mobile nav starts -->
+         <section id="mobilemenu" class="d-lg-none" >
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                      <button class="bt" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobSidebar">
+                          <i class="fa-solid fa-align-right"></i>
+                      </button>
+                    </div>
+                    <div class="col">
+                        <a href="#"><img src="./img/Logo (1).png" alt=""></a>
+                    </div>
+                    <div class="col quicklinks">
+                        <ul>
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        
+                    </ul>
+
+                    </div>
+                </div>
+            </div>
+         </section>
+                     <!-- bar -->
+         <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="mobSidebar">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">MENU</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas">
+
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <a href="./index.html" class="d-block text-white mb-2">Home</a>
+        <a href="./shop.html" class="d-block text-white mb-2">Shop</a>
+        <a href="#" class="d-block text-white mb-2">Settings</a>
+        <a href="#" class="d-block text-white mb-2">Log Out</a>
+    </div>
+        <!-- mobile nav end -->
+
+     </header>
+    <!-- Header section ends -->
+
+    <section id="shopcatagries" class="d-none d-lg-block">
+   <div class="container">
+     <div class="catagories1">
+            <ul class="d-flex align-items-center">
+                <li><a href="#"><i class="fa-solid fa-house-user"></i></a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-chevron-right"></i> 
+                 Catagories<i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="#">Vagetables</a></li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    <main>
+        <!-- Product Details -->
+        <section id="info">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="productThumbSlider">
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/sliderimg1.png" alt="">
+                                    </div>
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/Slideimg2.png" alt="">
+                                    </div>
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/sliderimg3.png" alt="">
+                                    </div>
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/sliderimg4.png" alt="">
+                                    </div>
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/sliderimg1.png" alt="">
+                                    </div>
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/Slideimg2.png" alt="">
+                                    </div>
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/sliderimg3.png" alt="">
+                                    </div>
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/sliderimg4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="productGallerySlider">
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/sliderimg1.png" alt="">
+                                    </div>
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/Slideimg2.png" alt="">
+                                    </div>
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/sliderimg3.png" alt="">
+                                    </div>
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/sliderimg4.png" alt="">
+                                    </div>
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/sliderimg1.png" alt="">
+                                    </div>
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/Slideimg2.png" alt="">
+                                    </div>
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/sliderimg3.png" alt="">
+                                    </div>
+                                    <div class="slider">
+                                        <img class="img-fluid" src="./img/sliderimg4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                          <div class="col-lg-6">
+                          <div class="row">
+                            <div class="col-8">
+                              <h5>Chinese Cabbage</h5>
+                            </div>
+                            <div class="col-2">
+                              <span class="instock">In Stock</span>
+                            </div>
+
+                          </div>
+
+                      
+                          <div class="row d-flex reating">
+                            <div class="col-6">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <span>4 Review</span>
+                            </div>
+                            <div class="col-6">
+                              <strong>SKU:</strong> <span>2,51,594</span>
+                            </div>
+                          </div>
+                      
+                          <div class="row d-flex price">
+                            <div class="col-6">
+                              <del>$48.00 </del>
+                              <h6>$17.28</h6>
+                            </div>
+                            <div class="col-6">
+                              <span class="text-danger">64% Off</span>
+                            </div>
+                          </div>
+                      
+                          <div class="row d-flex align-items-center">
+                            <div class="col-4">
+                              <h6>Brand:</h6>
+                              <img  class="img-fluid" src="./images/brand.png" alt="">
+                            </div>
+                            <div class="col-8 social-icons d-flex">
+                              <span class="share"><h6>Share item:</h6></span>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                             
+                            </div>
+                          </div>
+                      
+                          <p>
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                            himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum.
+                          </p>
+                      
+                          <div class="row d-flex align-items-center">
+                            <div class="col-2">
+                              <div class="counter">
+                                <button class="decrementBtn">-</button>
+                                <input class="quality" type="number" value="5" />
+                                <button class="incrementBtn">+</button>
+                              </div>
+                            </div>
+                            <div class="col-8">
+                              <a href="./shopping_cart.html" class="btn btn-primary btabout">Add to Cart <i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="./wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                          </div>
+                      
+                          <h6>Category: <span>Vegetables</span></h6>
+                          <h6>Tag: <span>Vegetables, Healthy, Chinese, Green Cabbage</span></h6>
+                        </div>
+                </div>
+        </section>
+
+        <!-- Product details ends -->
+         <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <a href="#"><img class="img-fluid" src="./img/Description.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="#"><img class="img-fluid" src="./img/Group 32.png" alt=""></a>
+
+                    </div>
+                </div>
+            </div>
+         </section>
+
+       
+
+
+
+        <!-- Related Products -->
+        <section id="featured">
+            <div class="container">
+                <div class="heading d-flex justify-content-center align-items-center">
+                    <h2>
+                        Related Products
+                    </h2>
+                </div>
+
+                <div class="featuredProducts">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="productCard">
+                            <div class="productThumb">
+                                <div class="quickLinks">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                    </ul>
+    
+                                </div>
+                                <div class="label">
+                                    Sale 50% 
+                                </div>
+                                <a href="#"><img class="img-fluid" src="./img/Product Image1.png" alt=""></a>
+                                
+                            </div>
+                            
+                            <div class="productCnt">
+                                <a href="#" class="productTitle">Green Apple</a>
+                                <p>$14.99 <del>$20.99</del></p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star empty"></i>
+
+                                </div>
+                                <a href="#" class="cartBtn"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="productCard">
+                            <div class="productThumb">
+                                <div class="quickLinks">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                    </ul>
+    
+                                </div>
+                                
+                                <a href="#"><img class="img-fluid" src="./img/Product Image2.png" alt=""></a>
+                                
+                            </div>
+                            
+                            <div class="productCnt">
+                                <a href="#" class="productTitle">Chanise Cabbage</a>
+                                <p>$14.99 </p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star empty"></i>
+
+                                </div>
+                                <a href="#" class="cartBtn"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="productCard">
+                            <div class="productThumb">
+                                <div class="quickLinks">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                    </ul>
+    
+                                </div>
+                                
+                                <a href="#"><img class="img-fluid" src="./img/Product Image3.png" alt=""></a>
+                                
+                            </div>
+                            
+                            <div class="productCnt">
+                                <a href="#" class="productTitle">Green Capsicum</a>
+                                <p>$14.99 </p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star empty"></i>
+
+                                </div>
+                                <a href="#" class="cartBtn"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="productCard">
+                            <div class="productThumb">
+                                <div class="quickLinks">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa-regular fa-eye"></i></a></li>
+                                    </ul>
+    
+                                </div>
+                                
+                                <a href="#"><img class="img-fluid" src="./img/Product Image4.png" alt=""></a>
+                                
+                            </div>
+                            
+                            <div class="productCnt">
+                                <a href="#" class="productTitle">Red Capsicum</a>
+                                <p>$14.99</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star empty"></i>
+
+                                </div>
+                                <a href="#" class="cartBtn"><i class="fa-solid fa-bag-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Related Products ends -->
+
+        <!-- Subscriber  -->
+      
+        <!-- Subscriber ends -->
+    </main>
+
+<section id="mobilefooter" class="d-lg-none">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li><a href="#">
+                        <span><i class="fa-solid fa-heart"></i>        
+                        </span>
+                        Wishlist
+                    </a></li>
+                    
+                    <li><a href="#">
+                        <span><i class="fa-solid fa-user"></i></span>
+                        user
+                    </a></li>
+                    <li><a href="#">
+                        <span><i class="fa-solid fa-bag-shopping"></i></span>
+                        bag
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+     </section>
+
+     <!-- Footer for dekstop -->
+ <section id="footerend">
+      <footer class="footer">
+  <div class="container">
+    <div class="footer-section logo-section">
+      <h2 class="logo"><img src="./img/Logo (1).png" alt=""></h2>
+      <p>Morbi cursus porttitor enim lobortis malesuada. Duis gravida turpis dui, eget bibendum magna.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h3>My Account</h3>
+      <ul>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Shopping Cart</a></li>
+        <li><a href="#">Wishlist</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Helps</h3>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Terms & Condition</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Proxy</h3>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Track Order</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Download Mobile App</h3>
+      <div class="d-flex gap">
+        <img src="./img/App Store.png" alt="App Store" width="120">
+        <img src="./img/Google Play.png" alt="Google Play" width="120">
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© Ecobazar eCommerce © 2021. All Rights Reserved</p>
+  </div>
+</footer>
+
+</section>  
+    
+    <!-- Footer for dekstop ends -->
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

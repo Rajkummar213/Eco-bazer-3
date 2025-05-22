@@ -29,5 +29,38 @@
 .leftArrow1, .rightArrow2{
     display: none;
 }
-
+#number .number1 {
+    padding: 36px 0px;
+    width: 222px;
+    height: 125px;
+    background: rgba(255, 255, 255, 0.07);
+}
+.sells .sellCnt .quickLinks {
+    width: 119px;
+}
+#catleftArrow{
+    display: none;
+}
+#Featured h2 {
+    font-size: 20px;
+}
+#Organic  h2 {
+    font-size: 25px;
+}
+.btn {
+    border-radius: 41px;
+    padding: 21px 49px;
+    font-size: 18px;
+}
+.img-fluid {
+    max-width: 100%;
+    margin-top: 10px;
+}
+.mainfrom .from input {
+    width: 265px;
+}
+#subescribe .social-icons {
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
 }
